@@ -1,0 +1,272 @@
+/* css Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* Navigation bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+    height: 60px;
+
+}
+#navbar ::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#logo{
+    margin: 10px 30px;
+    height: 60px;
+}
+
+
+#im{
+    
+    height: 60px;
+    width: 60px;
+    margin: 0px 0px;
+    padding: 0px;
+    filter: invert(500%);
+    
+}
+
+#navbar ul{
+    display: flex;
+    font-family: sans-serif;
+}
+
+#navbar ul li{
+    /* color: white; */
+    list-style: none;
+    font-size: 1.3rem;
+
+}
+#navbar ul li a{
+    display: block;
+    padding: 3px 24px;
+    border-radius: 21px;
+    color: white;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: #fff;
+}
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home ::before{
+    content: "";
+    background: url(img/Dish.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.7;
+    
+}
+#home h1{
+    color: white;
+    text-align: center;
+    font-size: 2.7rem;
+    font-family: cursive;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.7rem;
+
+}
+
+#services{
+    
+    margin: 34px;
+    display: flex;
+    background: url(img/Pizza.jpg)no-repeat center center/cover;
+    
+
+
+}
+#services .box{
+    border: 2px solid rgb(187, 187, 243);
+    padding: 30px;
+    margin: 2px 50px;
+    border-radius: 25px;
+    background-color: #f2f2f2;
+    margin-bottom: 21px;
+
+
+}
+#services .box img{
+    height: 160px;
+    margin: auto;
+    display: block;
+}
+#services .box p{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+#client-section{
+    position: relative;
+    background: url(img/Cake.jpg)no-repeat center;
+}
+#client-section ::before{
+    content: "";
+    position: absolute;
+    height: 124px;
+    width: auto;
+    z-index: -1;
+    opacity: 0.3;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clients-item{
+    padding: 34px;
+
+}
+
+#clients img{
+    height: 124px;
+    padding: 5px;
+}
+
+#contact{
+    position: relative;
+
+    background: url(img/Contact.jpg)no-repeat center center/cover;
+}
+/* #contact ::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.5;
+}
+     */
+    
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    background-color: #e4f7f7a1;
+}
+
+
+
+#contact-box form{
+    width: 40%;
+}
+
+#contact-box label{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 21px;
+}
+
+.h-primary{
+    font-family: 'Bree serif',serif;
+    font-size: 3.8rem;
+    padding: 24px;
+    margin: 67px;
+}
+.h-secondary{
+    font-family: 'Bree serif',serif;
+    font-size: 2.3rem;
+    padding: 12px;
+
+}
+
+
+.btn{
+    padding: 1px 20px;
+    border: 3px solid white;
+    background-color: brown;
+    margin: 8px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    padding: 1px 20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: coral;
+    border: 3px solid black;
+    
+}
+
+#bton{
+    margin: 2px 8px;
+    padding: 5px 205px;
+    border: 3px solid chartreuse;
+    background-color: rgb(3, 121, 81);
+    border-radius: 12px;
+    font-size: 1.4rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    
+
+}
+.btn:visited{
+    text-decoration: underline;
+    color: blue;
+
+}
+#bton:hover{
+    background-color: chartreuse;
+    border: 3px solid rgb(66, 50, 205);
+}
+#bton:visited{
+    text-decoration: underline;
+    color: blue;
+}
+.center{
+    text-align: center;
+
+}
